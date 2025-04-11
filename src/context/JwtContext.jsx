@@ -2,7 +2,7 @@ import { getProfile } from "../services/auth.js"
 import { ACCOUNT_INITIALISE, LOGIN, LOGOUT } from "../store/action.js"
 import { tokenName } from "../services/auth.js"
 import { jwtDecode } from "jwt-decode"
-const { createContext, useReducer, useEffect } = require("react")
+import { createContext, useReducer, useEffect } from "react"
 
 const initiaState = {
   isLoggedIn: false,

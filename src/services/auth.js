@@ -25,7 +25,7 @@ export const logout = () => {
 
 export const login = async (userData) => {
   try {
-    const data = await axios.post("auth/userlogin", userData)
+    const data = await instance.post("auth/userlogin", userData)
     setToken(data.data.token)
     return { profileInfo: getProfile() }
   } catch (error) {

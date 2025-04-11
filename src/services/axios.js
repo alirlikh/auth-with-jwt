@@ -9,10 +9,10 @@ export const instance = axios.create({
 
 instance.interceptors.request.use(
   (config) => {
-    config.headers = {
-      ...config.headers
-      // Authorization: getToken()
-    }
+    // config.headers = {
+    //   ...config.headers
+    //   // Authorization: getToken()
+    // }
   },
   (error) => {
     return Promise.reject(error)
